@@ -14,51 +14,28 @@
       crossorigin="anonymous"
     />
     <style>
-      h1 {
-        font-size: 50px;
-        font-family: Roboto;
-        font-weight: normal;
-        color: rgb(8, 1, 27);
-        text-align: center;
-      }
-
       #banner {
-        width: 100%;
         height: 360px;
+        width: 100%;
         object-fit: cover;
       }
-
-      h2 {
-        font-family: Roboto;
-        font-size: 32px;
-        color: rgb(100, 100, 100);
-        text-align: center;
-      }
-
-      .bodytext {
-        font-family: Roboto;
-        font-size: 22px;
-        color: rgb(80, 80, 80);
-        text-align: justify;
-      }
-      #container {
-        max-width: 920px;
-        margin: 0 auto 0 auto;
-      }
     </style>
+
     <title>{% block title %} Kelvin Careers{% endblock %}</title>
   </head>
   <body>
-    <div id="container">
-      <h1>Kelvin: #TechTinkerer | #DigitalAlchemist | #HTMLHero</h1>
-      <h2>
+    <div class="container">
+      <h1 class="text-center mt-2 mb-2">
+        Kelvin: #TechTinkerer | #DigitalAlchemist | #HTMLHero
+      </h1>
+      <h2 class="text-center mt-2 mb-4">
         Transforming ideas into awe-inspiring websites through the magic of
-        coding. ✨
+        coding.✨
       </h2>
-      <img id="banner" src="/static/banner.jpg" />
+      <img id="banner" class="img-fluid" src="/static/banner.jpg" />
 
-      <h2>About Kelvin</h2>
-      <p class="bodytext">
+      <h2 class="text-center mt-2 mb-2">About Kelvin</h2>
+      <p>
         Hey there! 👋 I'm a Web Developer with a passion for coding and solving
         complex problems.👨‍💻 When I'm not glued to the computer screen, you'll
         find me exploring new landscapes as I love Travelling 🌍. Also, I wear
@@ -69,12 +46,12 @@
         digital dreams. I am Excited to connect with fellow tech enthusiasts and
         wanderlust souls. Let's inspire and learn from each other! 💼💡🚀
       </p>
-      <h2>Open Positions</h2>
-      <p class="bodytext">Todo - show the jobs here</p>
-      <div style="text-align: center">
-        <button>Contact Us</button>
+      <h2 class="text-center mt-2 mb-2">Open Positions</h2>
+      <p>Todo - show the jobs here</p>
+      <div class="text-center">
+        <button class="btn btn-primary btn-lg">Contact Us</button>
       </div>
-      <p>Copyright 2023, Kelvin</p>
+      <p class="mt-4">Copyright 2023, Kelvin</p>
     </div>
 
     {% block content %} {% endblock %}
