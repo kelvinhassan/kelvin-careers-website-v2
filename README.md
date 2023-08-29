@@ -1,3 +1,1 @@
-# kelvin-careers-website
-
-# visit site via https://kelvin-careers-website.onrender.com/
+# kelvin-careers-website version 2 database driven
