@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {% include 'bootstrap.html'%}
+    <title>Application Submitted</title>
+  </head>
+  <body>
+    {% include 'nav.html'%} {% include 'banner.html'%}
+    <div class="container">
+      <h1 class="text-center mt-2 mb-2">Kelvin Careers</h1>
+      <h6 class="mt-2 mb-2">
+        Your application for the role of <b>{{job['title']}}</b> at Kelvin
+        Careers has been submitted
+      </h6>
+      <b>Full Name</b>
+      <div class="mb-3">{{application['full_name']}}</div>
+
+      <b>Email</b>
+      <div class="mb-3">{{application['email']}}</div>
+
+      <b>LinkedIn Url</b>
+      <div class="mb-3">{{application['linkedin_url']}}</div>
+
+      <b>Education</b>
+      <div class="mb-3">{{application['education']}}</div>
+
+      <b>Work Experience</b>
+      <div class="mb-3">{{application['work_experience']}}</div>
+
+      <b>Resume Url</b>
+      <div class="mb-3">{{application['resume_url']}}</div>
+    </div>
+
+    {% include 'footer.html'%}
+  </body>
+</html>
