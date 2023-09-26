@@ -21,10 +21,12 @@ engine = create_engine(
 
 def load_jobs_from_db():
     with engine.connect() as conn:
-        result = conn.execute(text("select * from jobs"))
+        result = conn.execute(text("SELECT * FROM jobs"))
         jobs = []
-        for row in result.all():
-            jobs.append(dict(row))
+        column_names = result.keys()  # Get column names
+        for row in result.fetchall():
+            job_dict = dict(zip(column_names, row))
+            jobs.append(job_dict)
         return jobs
 
 
